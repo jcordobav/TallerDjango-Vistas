@@ -16,7 +16,6 @@ def get_measurment(measurment_pk):
 
 def update_measurment(measurment_pk, new_measurment):
     variable = variables_logic.get_variable(new_measurment["fields"]["variable"])
-
     measurment = get_measurment(measurment_pk)
     measurment.place = new_measurment["fields"]["place"]
     measurment.variable = variable
